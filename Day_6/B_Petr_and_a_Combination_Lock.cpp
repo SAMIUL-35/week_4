@@ -12,12 +12,12 @@ int main()
     {
         cin >> v[i];
     }
-    for (int mask = 0; mask < (1 << n); mask++)
+    for (int j = 0; j < (1 << n); j++)
     {
         int sum = 0;
         for (int i = 0; i < n; i++)
         {
-            if (mask & (1 << i))
+            if (j & (1 << i))
             {
                 sum += v[i];
             }
